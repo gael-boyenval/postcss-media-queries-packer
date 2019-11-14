@@ -155,7 +155,7 @@ function addToAtRules (node) {
   node.remove();
 }
 
-module.exports = postcss.plugin('postcss-media-queries-packer', options => root => {
+module.exports = postcss.plugin('postcss-media-queries-packer-on-demand', options => root => {
   const opts = {
     sort: false,
     ...options
